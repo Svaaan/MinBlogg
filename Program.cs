@@ -7,5 +7,8 @@
         Blog blog = new Blog("CoolaBloggen");
         BlogPost blogPost = new("Första Inlägget", "Här är mitt inlägg", true);
         Comment comment = new("Fin Blogg");
+
+        
+        db.SaveChanges();
     }
 }

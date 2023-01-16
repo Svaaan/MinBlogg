@@ -1,9 +1,14 @@
+using System.ComponentModel.DataAnnotations;
 public class BlogPost
 {
 
     public int BlogPostId { get; private set; }
-    //public Author Author { get; private set; }
+    //public Author Author { get; private set;
+    [Required]
+    [MaxLength(50)]
     public string Title { get; set; }
+    [Required]
+    [MaxLength(1000)]
     public string Content { get; set; }
     public bool IsPublished { get; set; }
     public int AuthorId { get; set; }

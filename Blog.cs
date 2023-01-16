@@ -1,7 +1,11 @@
+using System.ComponentModel.DataAnnotations;
 public class Blog
 {
     //BlogPost blogPost = new BlogPost();
     public int BlogId { get; set; }
+    
+    [Required]
+    [MaxLength(30)]
     public string BlogName { get; set; }
 
     public Blog(string blogName)
